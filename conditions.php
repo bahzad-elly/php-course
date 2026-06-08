@@ -24,27 +24,48 @@ match
 // }else{
 //     echo "the age is small";
 // }
-if($_POST){
-$day = $_POST["day"];
+// $day = 2;
 
-switch($day){
-    case 1 :
-        echo "yak shama";
-        break;
-    case 2 : 
-        echo "dw shama";
-        break;
-    case 3 :
-        echo "se shama";
-        break;
-    default :
-    echo "pewist yakek bet la rozhakani hafta";
-}
-}
+
+// switch($day){
+//     case 1 :
+//         echo "yak shama";
+//         break;
+//     case 2 : 
+//         echo "dw shama";
+//         break;
+//     case 3 :
+//         echo "se shama";
+//         break;
+//     default :
+//     echo "pewist yakek bet la rozhakani hafta";
+// }
+
+
+// $age = 222;
+
+// $res = match ($age) {
+//      11=> "this is child",
+//     22=> "this is young",
+//     default=> "unknown"
+// };
+
+// echo $res;
+
+$colors= [
+1=>"red",
+2=>"green",
+3=>"black",
+4=>"blue"
+
+];
+
+$color = $_POST["color"]??null;
+
+echo $colors[$color]?? "unkown";
 
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,9 +74,11 @@ switch($day){
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
-        add the number day : <input type="number" name="day"><br>
+    <form method="post">
+        add the color: <input type="number" name="color">
+        <br>
         <button type="submit">show</button>
     </form>
 </body>
 </html>
+
