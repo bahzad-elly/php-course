@@ -21,7 +21,7 @@ if($_GET){
         <input type="text" name="username" id="" placeholder="inter the username">
         <button type="submit">send</button><br>
     </form>
-   
+  
 
 </body>
 </html>
